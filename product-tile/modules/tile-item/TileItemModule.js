@@ -1,9 +1,9 @@
 import { TileItemView } from "./TileItemView.js"
-import { TileItemService } from "./TileItemService.js";
+import { TileItemViewModel } from "./TileItemViewModel.js";
 import { TileItemController } from "./TileItemController.js";
 
 export const TileItemModule = (id) => {
     const view = new TileItemView(id);
-    const service = new TileItemService();
-    return new TileItemController(view, service);
+    const viewModel = new TileItemViewModel();
+    return new TileItemController(view, viewModel);
 }

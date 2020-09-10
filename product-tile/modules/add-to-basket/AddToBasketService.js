@@ -1,6 +1,6 @@
-import { BaseService } from "../../../core/BaseService.js";
+import { ViewModel } from "../../../core/ViewModel.js";
 
-export class AddToBasketService extends BaseService {
+export class AddToBasketViewModel extends ViewModel {
 
     constructor() {
         super();

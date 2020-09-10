@@ -1,9 +1,9 @@
-import { BaseController } from "../../../core/BaseController.js";
+import { Controller } from "../../../core/Controller.js";
 
-export class AddToBasketController extends BaseController {
+export class AddToBasketController extends Controller {
 
-    constructor(view, service) {
-        super(view, service);
+    constructor(view, viewModel) {
+        super(view, viewModel);
         this.init();
     }
 
@@ -12,7 +12,7 @@ export class AddToBasketController extends BaseController {
     }
 
     addToBasket = () => {
-        this.service.addToBasket();
+        this.viewModel.addToBasket();
     }
 
 }

@@ -1,9 +1,9 @@
-import { BaseController } from "../../../core/BaseController.js";
+import { Controller } from "../../../core/Controller.js";
 
-export class TileItemController extends BaseController {
+export class TileItemController extends Controller {
 
-    constructor(view, service) {
-        super(view, service);
+    constructor(view, viewModel) {
+        super(view, viewModel);
     }
 
 }

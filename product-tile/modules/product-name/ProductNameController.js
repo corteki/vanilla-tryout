@@ -1,9 +1,9 @@
-import { BaseController } from "../../../core/BaseController.js";
+import { Controller } from "../../../core/Controller.js";
 
-export class ProductNameController extends BaseController {
+export class ProductNameController extends Controller {
 
-    constructor(view, service) {
-        super(view, service);
+    constructor(view, viewModel) {
+        super(view, viewModel);
         this.init();
     }
 
@@ -12,6 +12,6 @@ export class ProductNameController extends BaseController {
     }
 
     changeName = () => {
-        this.service.changeName();
+        this.viewModel.changeName();
     }
 }

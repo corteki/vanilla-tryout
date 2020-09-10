@@ -1,6 +1,6 @@
-import { BaseService } from "../../../core/BaseService.js";
+import { ViewModel } from "../../../core/ViewModel.js";
 
-export class ProductNameService extends BaseService {
+export class ProductNameViewModel extends ViewModel {
 
     constructor() {
         super();

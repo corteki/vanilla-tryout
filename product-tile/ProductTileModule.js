@@ -1,9 +1,9 @@
 import { ProductTileView } from "./ProductTileView.js";
-import { ProductTileService } from "./ProductTileService.js";
+import { ProductTileViewModel } from "./ProductTileViewModel.js";
 import { ProductTileController } from "./ProductTileController.js";
 
 export const ProductTileModule = () => {
     const view = new ProductTileView('assortiment');
-    const service = new ProductTileService();
-    return new ProductTileController(view, service);
+    const viewModel = new ProductTileViewModel();
+    return new ProductTileController(view, viewModel);
 }

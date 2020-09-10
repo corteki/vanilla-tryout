@@ -1,7 +1,7 @@
 import { ProductTileModel } from "./ProductTileModel.js";
-import { BaseService } from "../core/BaseService.js";
+import { ViewModel } from "../core/ViewModel.js";
 
-export class ProductTileService extends BaseService {
+export class ProductTileViewModel extends ViewModel {
 
     constructor() {
         super();

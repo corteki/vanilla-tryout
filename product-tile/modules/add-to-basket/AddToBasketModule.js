@@ -1,9 +1,9 @@
 import { AddToBasketView } from "./AddToBasketView.js"
-import { AddToBasketService } from "./AddToBasketService.js";
+import { AddToBasketViewModel } from "./AddToBasketService.js";
 import { AddToBasketController } from "./AddToBasketController.js";
 
 export const AddToBasketModule = () => {
     const view = new AddToBasketView("add-to-basket");
-    const service = new AddToBasketService();
-    return new AddToBasketController(view, service);
+    const viewModel = new AddToBasketViewModel();
+    return new AddToBasketController(view, viewModel);
 }

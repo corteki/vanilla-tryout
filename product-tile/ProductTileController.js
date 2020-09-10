@@ -1,9 +1,9 @@
-import { BaseController } from "../core/BaseController.js";
+import { Controller } from "../core/Controller.js";
 
-export class ProductTileController extends BaseController {
+export class ProductTileController extends Controller {
 
-    constructor(view, service) {
-        super(view, service);
+    constructor(view, viewModel) {
+        super(view, viewModel);
         this.init();
     }
 
@@ -12,7 +12,7 @@ export class ProductTileController extends BaseController {
     }
 
     getTiles = () => {
-        this.service.getTiles();
+        this.viewModel.getTiles();
     }
 
 }
